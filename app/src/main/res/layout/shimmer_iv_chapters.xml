@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvItemView"
+    android:elevation="2.60dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6.50dp"
+    >
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="6.50dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".9"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="130.00dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shimmer"
+                        android:baselineAligned="false"
+                        android:textColor="@color/orange"
+                        android:textSize="15.60sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom=".1dp"/>
+
+                    <TextView
+                        android:layout_width="169.00dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shimmer"
+                        android:baselineAligned="false"
+                        android:textColor="@color/black"
+                        android:textSize="19.50sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvChapterDescription"
+                android:layout_width="match_parent"
+                android:layout_height="91.00dp"
+                android:background="@drawable/bg_shimmer"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingStart="4dp"
+                android:textColor="@color/ChapterDetail"
+                android:layout_margin="6.50dp"
+                android:textSize="15.60sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9.10dp"
+                >
+                <ImageView
+                    android:layout_width="36.40dp"
+                    android:layout_height="36.40dp"
+                    app:tint="@color/black"
+                    android:background="@drawable/bg_shimmer"/>
+                <TextView
+                    android:id="@+id/tvVerse"
+                    android:layout_width="130.00dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shimmer"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="3.9dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
